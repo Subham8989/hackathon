@@ -26,7 +26,7 @@
     }
     #section6 #submit{
         margin-left: 20px;
-        background-color:  gold/* rgb(244, 208, 118) */;
+        background-color:  gold;
         color: #411346;
     }
     #submit:hover {
@@ -100,10 +100,7 @@
         animation-fill-mode: forwards;
         animation-iteration-count: 1;
         opacity: 0%;
-        /* background-color: rgba(0, 0, 0, 0.1); */
-        /* backdrop-filter: blur(5px); */
         border-radius: 2em;
-        /* box-shadow: 0px 0px 15px 20px rgba(0, 0, 0, 0.1); */
     }
     #section2 {
         width: 100%;
@@ -112,7 +109,6 @@
     }
     #section2 > h1 {
         font-family: 'Kalnia', serif;
-        /* position: absolute; */
         padding-left: 40px;
         font-weight: 400;
         padding-top: 20px;
@@ -121,11 +117,10 @@
     #section3 {
         width: 100%;
         height: 50vh;
-        background-color: /* #fdc49c */#aaa2a5;
+        background-color: #aaa2a5;
     }
     #section3 > h1 {
         font-family: 'Kalnia', serif;
-        /* position: absolute; */
         padding-left: 40px;
         font-weight: 400;
         padding-top: 20px;
@@ -138,7 +133,6 @@
     }
     #section4 > h1 {
         font-family: 'Kalnia', serif;
-        /* position: absolute; */
         padding-left: 40px;
         font-weight: 400;
         padding-top: 20px;
@@ -151,7 +145,6 @@
     }
     #section5 > h1 {
         font-family: 'Kalnia', serif;
-        /* position: absolute; */
         padding-left: 40px;
         font-weight: 400;
         padding-top: 20px;
@@ -165,7 +158,6 @@
     #section6 > h1 {
         font-family: 'Kalnia', serif;
         color: lightgoldenrodyellow;
-        /* position: absolute; */
         padding-left: 40px;
         font-weight: 400;
         padding-top: 20px;
@@ -207,4 +199,59 @@
 
 ::selection {
     background: rgba(0, 0, 0, 0.4);
+}
+
+#section2 #container #fan-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgb(204, 205, 195), rgba(0, 0, 0, 0)),url('./assets/fan.png');
+    width: 35%;
+    height: 50vh;
+    position: absolute;
+    top: calc(100vh - 60px);
+    right: 0;
+    height: 50vh;
+    float: right;
+    object-fit: cover;
+}
+
+#section3 #container #bulb-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, #aaa2a5, rgba(0, 0, 0, 0)),url('./assets/bulb.jpg');
+    width: 35%;
+    height: 50vh;
+    position: absolute;
+    top: calc(150vh - 60px);
+    right: 0;
+    height: 50vh;
+    float: right;
+    object-fit: cover;
+}
+
+#section4 #container #led-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, bisque, rgba(0, 0, 0, 0)),url('./assets/led.png');
+    width: 35%;
+    height: 50vh;
+    position: absolute;
+    top: calc(200vh - 60px);
+    right: 0;
+    height: 50vh;
+    float: right;
+    object-fit: cover;
+}
+#section5 #container #ac-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, #BFC6C3, rgba(0, 0, 0, 0)),url('./assets/ac.png');
+    width: 35%;
+    height: 50vh;
+    position: absolute;
+    top: calc(250vh - 60px);
+    right: 0;
+    height: 50vh;
+    float: right;
+    object-fit: cover;
 }
