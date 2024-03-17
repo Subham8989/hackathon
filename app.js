@@ -1,4 +1,4 @@
-require('dotenv').config();
+/* require('dotenv').config();
 const path = require('path');
 let cors = require('cors');
 const express = require('express');
@@ -18,4 +18,4 @@ app.post('/devices/:id', (req, res) => {
 
 app.listen(port, () => {
     console.log("App is running on the port");
-})
+}) */
