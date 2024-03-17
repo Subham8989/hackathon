@@ -24,9 +24,18 @@
         color: white;
         transition: background-color 1s;
     }
+    #section6 #submit{
+        margin-left: 20px;
+        background-color:  gold/* rgb(244, 208, 118) */;
+        color: #411346;
+    }
     #submit:hover {
         background-color: blue;
         color: white;
+        cursor: pointer;
+    }
+    #section6 #submit:hover{
+        background-color: goldenrod;
         cursor: pointer;
     }
     body {
@@ -91,13 +100,15 @@
         animation-fill-mode: forwards;
         animation-iteration-count: 1;
         opacity: 0%;
-        backdrop-filter: blur(5px);
+        /* background-color: rgba(0, 0, 0, 0.1); */
+        /* backdrop-filter: blur(5px); */
         border-radius: 2em;
+        /* box-shadow: 0px 0px 15px 20px rgba(0, 0, 0, 0.1); */
     }
     #section2 {
         width: 100%;
         height: 50vh;
-        background-color: bisque;
+        background-color: rgb(204, 205, 195);
     }
     #section2 > h1 {
         font-family: 'Kalnia', serif;
@@ -110,7 +121,7 @@
     #section3 {
         width: 100%;
         height: 50vh;
-        background-color: rgb(200, 236, 200);
+        background-color: /* #fdc49c */#aaa2a5;
     }
     #section3 > h1 {
         font-family: 'Kalnia', serif;
@@ -136,10 +147,24 @@
     #section5 {
         width: 100%;
         height: 50vh;
-        background-color: rgb(200, 236, 200);
+        background-color: #BFC6C3;
     }
     #section5 > h1 {
         font-family: 'Kalnia', serif;
+        /* position: absolute; */
+        padding-left: 40px;
+        font-weight: 400;
+        padding-top: 20px;
+
+    }
+    #section6 {
+        width: 100%;
+        height: 30vh;
+        background-color: #062819;
+    }
+    #section6 > h1 {
+        font-family: 'Kalnia', serif;
+        color: lightgoldenrodyellow;
         /* position: absolute; */
         padding-left: 40px;
         font-weight: 400;
@@ -167,7 +192,7 @@
     height: 56px;
     border-radius: 10px;
     font-size: 18px;
-    background-color: indigo;
+    background-color: #384440;
     color: bisque;
     position: fixed;
     bottom: 40px;
@@ -177,5 +202,9 @@
 #upbtn:hover {
     cursor: pointer;
     transform: scale(1.1, 1.1);
-    background-color: darkblue;
+    background-color: #262D2A;
+}
+
+::selection {
+    background: rgba(0, 0, 0, 0.4);
 }

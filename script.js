@@ -156,3 +156,36 @@ document.getElementsByClassName('ac-btn')[0].addEventListener("click", () => {
             console.error(error);
         });
 }, false);
+
+/* Status */
+
+document.getElementsByClassName('status-btn')[0].addEventListener("click", () => {
+    let statusId = document.getElementsByClassName('status-txt1')[0].value;
+    const options = {
+        "mode": "no-cors",
+        "method": "POST",
+        "headers": {
+            "Content-Type": "application/json", 
+            'Access-Control-Allow-Credentials' : true,
+            'Access-Control-Allow-Origin':'https://kodessphere-api.vercel.app/',
+            'Access-Control-Allow-Methods':'GET, POST',
+            'Access-Control-Allow-Headers':'application/json',
+        }
+    }
+    const pr = fetch(`https://kodessphere-api.vercel.app/devices/${statusId}`, options)
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error(`HTTP STATUSCODE: ${response.status}: ${response.statusText}`);
+            } 
+            else {
+                return response.json();
+            }
+        })
+        .then((data) => {
+            alert(JSON.stringify(data));
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+}, false);
+
